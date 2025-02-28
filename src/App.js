@@ -32,7 +32,7 @@ function App() {
 
     <GoogleOAuthProvider clientId={myCLientId}>
       <AuthProvider>
-        <BrowserRouter>
+        <BrowserRouter basename="/todo">
           <Routes>
             <Route exact path="/" element={<LandingPage></LandingPage>}></Route>
             <Route exact path="/login" element={<LoginPage></LoginPage>}></Route>
